@@ -4,6 +4,8 @@ import { PineconeStore } from "langchain/vectorstores/pinecone"
 import { initPinecone } from "@/config/pinecone"
 import { makePdfChain } from "@/lib/chain"
 
+export const runtime = 'edge'
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

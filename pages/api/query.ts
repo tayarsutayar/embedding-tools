@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import { OpenAIEmbeddings } from "langchain/embeddings/openai"
-import { PineconeStore } from "langchain/vectorstores"
+import { PineconeStore } from "langchain/vectorstores/pinecone"
 import { initPinecone } from "@/config/pinecone"
 import { makePdfChain } from "@/lib/chain"
 
